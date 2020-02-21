@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<link href = "index.css" rel="stylesheet"/>
+	<script type="text/javascript">
+		setTimeout(function() {
+			if(!document.querySelector('#loading')) 
+				return;
+
+			alert('There are some problems. Use the last version of Google Chrome browser to avoid them.\n\nMinimal supported Android version is 4.1 with Chrome 69.');	
+		}, 30000);
+	</script>
+	<script src = "index.js"></script>
+</head>
+<body>
+	<div id = "page-start" class = "page center" current>
+			<div class = "content">
+				<div id = "power-by">Powered by</div>
+				<a id = "logo" href = "https://www.macmillandictionary.com" class = "logo"></a>
+				<div id = "loading">Loading...</div>
+				<div id = "button-start" class = "button">Start</div>
+			</div>
+		</div>	
+	</div>
+
+	<div id = "page-main" class = "page absolute">
+		<div class = "caption">
+			<div id = "button-verbs"></div>
+			<div id = "button-help" class = "caption-button">Help</div>	
+			<div id = "button-option" class = "caption-button">Option</div>
+		</div>
+		
+		<div class = "content">
+			<table id = "wrapper">
+				<tr class = "top">
+					<td>
+						<div id = "answer"></div>
+					</td>
+				</tr>	
+				<tr class = "center">
+					<td>
+						<div id = "definition"></div>
+						<div id = "synonyms"></div>
+						<div id = "suggestions"></div>
+						<div id = "examples"></div>
+					</td>
+				</tr>
+				<tr class = "bottom">
+					<td>
+						<div id = "verbs" class = "list"></div>
+						<div id = "preps" class = "list"></div>
+						<div id = "button-block">
+							<div id = "button-verb-skip" class = "button">Skip</div>
+							<div id = "button-verb-add" class = "button">Got it!</div>
+						</div>
+					</td>
+				</tr>
+			</table>	
+		</div>
+	</div>
+
+	<div id = "page-verbs" class = "page absolute">
+		<div class = "caption">
+			<div>Current verbs</div>
+			<div class = "close" back = "main"></div>
+		</div>
+		
+		<div class = "content">	
+			<div id = "verbs"></div>
+		</div>
+	</div>
+
+	<div id = "page-option" class = "page center">
+		<div class = "caption">
+			<div>Option</div>
+			<div id = "button-option-close" class = "close" back = "main"></div>
+		</div>
+		
+		<div class = "content">
+			<div id = "verb-list-length" class = "selector col4" title = "List length" default = "10">
+				<div value = "10">10</div>
+				<div value = "20">20</div>
+				<div value = "30">30</div>
+				<div value = "50">50</div>
+			</div>
+
+			<div id = "verb-check-learned" class = "selector col2" title = "Check learned verbs" default = "yes">
+				<div value = "no">No</div>
+				<div value = "yes">Yes</div>
+			</div>
+
+			<div id = "verb-sound-enable" class = "selector col2" title = "Success ring enable" default = "yes">
+				<div value = "no">No</div>
+				<div value = "yes">Yes</div>
+			</div>
+
+			<div id = "verb-voice" class = "selector" title = "Voice" default = "no">
+				<div value = "no">No</div>
+			</div>
+		</div>
+	</div>
+
+	<div id = "page-help" class = "page absolute">
+		<div class = "caption">
+			<div>Help</div>
+			<div class = "close" back = "main"></div>
+		</div>
+		
+		<div class = "content content-padding">
+			<p>
+				This is an application to learn phrasal verbs. The app selects a random phrasal verb, displays definition and expects you to pass checks.<br>
+				If you fail the check, you'll be returned to previous check next time. If all tests are completed, the verb will be removed from the list and a new verb will be suggested.<br>
+			</p>
+
+			<p>
+				<div>Check list for phrasal verb</div>
+				<ul>
+					<li>Combine a answer from 3 verbs and 3 prepositions</li>
+					<li>Select one of 3 definitions by verb</li>
+					<li>Combine a answer from 5 verbs and 5 prepositions</li>
+					<li>Select one of 3 synonyms by verb</li>
+					<li>Select one of 5 definitions by verb</li>
+					<li>Combine a answer from 8 verbs and 8 prepositions</li>
+					<li>Reconstruct the verb in example</li>
+					<li>Select one of 5 synonyms by verb</li>
+					<li>Reconstruct the preposition in example</li>
+				</ul>
+			</p>
+
+			<p>
+				<b>List length</b>-option defines how much verbs you're learning at once.<br>
+				<b>Check learned verbs</b>-option controls random checks of learned verbs.
+			</p>
+
+			<p>	
+				If you have any questions, comments or suggestions, just let me know <a href="mailto:lb.im@yandex.ru?subject=English phrasal verbs site">lb.im@yandex.ru</a> or visit <a href = "https://github.com/little-brother/english-phrasal-verbs">project page</a>.<br>
+			</p>
+			
+			<p>
+				<div>See also</div>
+				<ul>
+					<li><a href = "https://little-brother.github.io/english-words/" target = "_blank">word learning</a></li>
+					<li><a href = "https://little-brother.github.io/english-speech/" target = "_blank">training pronounciation</a></li>
+					<li><a href = "https://little-brother.github.io/english-cards/" target = "_blank">word learning by images (prototype)</a></li>
+				</ul>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

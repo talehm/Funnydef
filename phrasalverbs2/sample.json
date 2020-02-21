@@ -1,0 +1,60 @@
+{
+    "scale down": {
+        "derivatives": [
+            "scales down",
+            "scaling down",
+            "scaled down"
+        ],
+        "descriptions": [
+            "to make something smaller in size, amount etc than it used to be"
+        ],
+        "examples": [
+            "The search operation has been scaled down.",
+            "a scaled-down peacekeeping force"
+        ],
+        "frequency": 0,
+        "synonyms": [
+            "cut",
+            "moderate",
+            "reduce",
+            "slow down"
+        ],
+        "translations": {
+            "2": {
+                "свертывать": [],
+                "сократить": [],
+                "сокращать": []
+            }
+        }
+    },
+    "scale up": {
+        "derivatives": [
+            "scales up",
+            "scaling up",
+            "scaled up"
+        ],
+        "descriptions": [
+            "to make something larger in size, amount etc than it used to be"
+        ],
+        "examples": [
+            "An order this size means scaling up our production capacity."
+        ],
+        "frequency": 0,
+        "synonyms": [
+            "blow up",
+            "enlarge",
+            "expand",
+            "extend"
+        ],
+        "translations": {
+            "2": {
+                "активизировать": [],
+                "наращивать": [],
+                "расширять": [],
+                "расширяться": [],
+                "увеличивать": [],
+                "увеличиваться": []
+            }
+        }
+    }
+}
